@@ -1,0 +1,25 @@
+{
+  "name": "SeuBarriga",
+  "version": "1.0.0",
+  "description": "TESTE NA PAGINA SEU BARRIGA",
+  "main": "index.js",
+  "scripts": {
+    "cypress run": "cypress run",
+    "cypress open": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/wlsf82/curso-cypress-intermediario.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/wlsf82/curso-cypress-intermediario/issues"
+  },
+  "homepage": "https://gitlab.com/wlsf82/curso-cypress-intermediario#readme",
+  "devDependencies": {
+    "faker": "^4.1.0",
+    "cypress": "^10.6.0"
+  }
+}
