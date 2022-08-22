@@ -3,6 +3,9 @@
 describe('Login', function () {
   it.only('successfully', () => {
     cy.Login()
-    cy.get('.qa-user-avatar').should('exist')
+    cy.get('.btn')
+      .click()
+    cy.contains('Seu Barriga')
+      .should('exist')
   })
 })
