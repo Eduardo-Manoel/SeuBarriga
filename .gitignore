@@ -1,6 +1,6 @@
 .DS_Store
 node_modules/
-cypress/downloads/
-cypress/screenshots/
-cypress/videos/
-cypress.config.js/
+cypress/cypress/downloads/
+cypress/cypress/screenshots/
+cypress/cypress/videos/
+cypress/cypress.config.js/
