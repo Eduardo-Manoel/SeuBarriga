@@ -4,8 +4,8 @@
   "description": "Teste Na pagina Seu Barriga",
   "main": "",
   "scripts": {
-    "cypress open": "cypress open",
-    "cypress Run": "cypress run",
+    "cypress open": "npx cypress open",
+    "cypress Run": "npx cypress run",
     "mobile Open": "cypress open --config viewportWidth=410 viewportHeight=860",
     "mobile Run": "cypress run --config viewportWidth=410 viewportHeight=860"
   },
