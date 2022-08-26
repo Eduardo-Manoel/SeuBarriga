@@ -18,3 +18,6 @@ Cypress.Commands.add('Login_Existente', function () {
   cy.get('.btn')
     .click()
 })
+Cypress.Commands.add('Logout', () => {
+  cy.contains('Sair')
+})

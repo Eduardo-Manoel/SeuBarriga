@@ -8,6 +8,8 @@ module.exports = defineConfig({
   e2e: {
     baseUrl:'https://seubarriga.wcaquino.me/login',
       //slowTestThreshold: 1000,
+        supportFile: 'support/e2e.js',
+        specPattern: 'e2e/**/*.cy.{js,jsx,ts,tsx}',
     env: {
       user_name: "user4@user.com",
       user_password: "123",
