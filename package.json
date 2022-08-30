@@ -9,7 +9,8 @@
     "mobile Open": "cypress open --config viewportWidth=410 viewportHeight=860",
     "mobile Run": "cypress run --config viewportWidth=410 viewportHeight=860"
   },
-"dependencies": {
-      "cypress": "^10.6.0"
-    }
+  "dependencies": {
+    "cypress": "^10.6.0",
+    "faker": "^5.5.3"
   }
+}

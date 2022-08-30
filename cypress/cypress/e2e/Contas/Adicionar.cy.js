@@ -22,7 +22,19 @@ describe('Contas', () => {
             .type('Eduardo')
         cy.get('.btn')
             .click()
-            cy.url()
+        cy.url()
             .should('be.equal', 'https://seubarriga.wcaquino.me/salvarConta')
+    })
+    const cypress = require('cypress')
+    const faker = require('faker')
+    describe('random.name', () => {
+        beforeEach(() => cy.login())
+
+        it('successfully', () => {
+            const project = {
+                name: `project-${faker.random.uuid()}`,
+                
+            }
+        })
     })
 })
