@@ -6,7 +6,7 @@ module.exports = defineConfig({
   viewportWidth: 1280,
   CYPRESS_RECORD_KEY:'a72a2449-b6f1-40d2-a04c-839d991db88f',
   e2e: {
-    baseUrl:'https://seubarriga.wcaquino.me/login',
+    baseUrl:'https://seubarriga.wcaquino.me/',
       //slowTestThreshold: 1000,
         supportFile: 'support/e2e.js',
         specPattern: 'e2e/**/*.cy.{js,jsx,ts,tsx}',

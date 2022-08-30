@@ -2,7 +2,7 @@
 
 describe('SEU BARRIGA', function () {
     beforeEach(function () {
-        cy.visit('/')
+        cy.visit('/login')
     })
     it('COMEÇO- Verifica o título da aplicação', function () {
         cy.title()
