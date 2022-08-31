@@ -1,6 +1,6 @@
 describe('Login', () => {
     it.only('successfully', () => {
-      cy.Login()
+      cy.login()
       cy.contains('Seu Barriga')
         .should('exist')
     })

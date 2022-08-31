@@ -13,6 +13,6 @@
     "faker": "^5.5.3"
   },
   "devDependencies": {
-    "cypress": "^10.6.0"
+    "cypress": "^10.7.0"
   }
 }
