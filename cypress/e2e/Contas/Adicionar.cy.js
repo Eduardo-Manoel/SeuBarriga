@@ -6,7 +6,8 @@ describe('create_conta', () => {
 
   it('successfully', () => {
     const conta = {
-      name: `${faker.random.words(1)}`
+      name: `${faker.name.firstName()}`
+      
     }
     cy.create_conta(conta)
     cy.url().should('be.equal', `${Cypress.config('baseUrl')}salvarConta`)
