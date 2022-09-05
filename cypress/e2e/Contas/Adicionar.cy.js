@@ -4,7 +4,7 @@ const faker = require('faker')
 describe('create_conta', () => {
   beforeEach(() => cy.login_conta())
 
-  it('successfully', () => {
+  it.only('successfully', () => {
     const conta = {
       name: `${faker.name.firstName()}`
       
@@ -13,6 +13,11 @@ describe('create_conta', () => {
     cy.url().should('be.equal', `${Cypress.config('baseUrl')}salvarConta`)
     cy.contains(conta.name).should('be.visible')
     cy.get('.alert').contains('Conta adicionada com sucesso!')
+    cy.get('#tabelaContas').contains('Conta')
+    cy.get('#tabelaContas').contains('Ações')
+    cy.get('.glyphicon glyphicon-edit').click
+    //cy.contains('.glyphicon glyphicon-remove-circle')
+
   })
   it('failure', () => {
     cy.get('#nome').clear().should('have.value', '')

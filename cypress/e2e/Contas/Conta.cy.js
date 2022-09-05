@@ -9,8 +9,9 @@ describe('Contas', () => {
         cy.get('a:contains(Adicionar)')
             .click()
         cy.url()
-            .should('be.equal', 'https://seubarriga.wcaquino.me/addConta')
-    })
+            .should('be.equal',`${Cypress.config('baseUrl')}addConta`)
+        
+})
     it('Verifica o campo Nome', () => {
         cy.get('a:contains(Contas)')
             .click()
@@ -23,7 +24,7 @@ describe('Contas', () => {
         cy.get('.btn')
             .click()
         cy.url()
-            .should('be.equal', 'https://seubarriga.wcaquino.me/salvarConta')
+            .should('be.equal',`${Cypress.config('baseUrl')}salvarConta`)
     })
 })
  
