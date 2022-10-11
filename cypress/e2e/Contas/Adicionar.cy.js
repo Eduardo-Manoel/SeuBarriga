@@ -16,8 +16,9 @@ describe('create_conta', () => {
     cy.get('#tabelaContas').contains('Conta')
     cy.get('#tabelaContas').contains('Ações')
     cy.get('#tabelaContas').contains(conta.name).siblings().children()
-    //cy.get('span').contains('glyphicon glyphicon-remove-circle')
-
+    
+    //.contains('.glyphicon-remove-circle span')
+    //<span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
   })
   it('failure', () => {
     cy.get('#nome').clear().should('have.value', '')
