@@ -15,7 +15,8 @@ describe('create_conta', () => {
     cy.get('.alert').contains('Conta adicionada com sucesso!')
     cy.get('#tabelaContas').contains('Conta')
     cy.get('#tabelaContas').contains('Ações')
-    cy.get('#tabelaContas').contains(conta.name).siblings().children()
+     cy.get('#tabelaContas').contains(conta.name).siblings().children()
+    // cy.get('[href="/removerConta?"] > .glyphicon').contains(conta.name)
     
     //.contains('.glyphicon-remove-circle span')
     //<span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
